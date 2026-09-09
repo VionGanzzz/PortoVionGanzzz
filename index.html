@@ -37,6 +37,10 @@ h1,h2,h3,h4,h5,h6{
 	height: auto;
 }
 .whatami{
+	margin-left: 120px;
+	margin-right: 120px;
+	padding-right: 10px;
+	padding-left: 10px;
 	margin-top: 80px;
 	margin-bottom: 80px;
 	border-style: double;
@@ -53,8 +57,6 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 16px;
 	text-align: left;
 	color: #BF3A45;
-	margin-left: 20px;
-	margin-right: 20px;
 }
 .Images h2{
 	font-size: 30px;
@@ -66,14 +68,12 @@ h1,h2,h3,h4,h5,h6{
 }
 .pasfoto{
 	margin-right: 10px;
-	display: flex;
+	display: inline-flex;
 	gap: 10px;
 	vertical-align: middle;
 }
 .pasfoto img{
-	min-width: 50%;
-	max-width: 100%;
-	height: 100%;
+	max-height: 100%;
 	rotate: -20deg;
 }
 .mypersona{
@@ -82,10 +82,117 @@ h1,h2,h3,h4,h5,h6{
 	border-size: 5px;
 	border-radius: 20px;
 	border-color: #BF3A45;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 140px;
+	margin-bottom: 140px;
 }
 .mypersona p{
-	margin-left: 10px;
-	margin-right: 5px;
+	margin-left: 5px;
+}
+.Gallery{
+	display: grid;
+	place-items: center;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	text-align: center;
+}
+.Gallery h1{
+	font-family: 'Beckman free';
+	font-size: 60px;
+	color: #BF3A45
+}
+.Gallery h2{
+	font-family: 'Ventura';
+	font-size: 24px;
+	font-style: bold;
+	color: #8EE6DB;
+	margin-bottom: 0px;
+}
+.Gallery h3{
+	font-family: 'Ventura';
+	font-size: 20 px;
+	color: #BF3A45;
+	margin-top: 3px;
+	margin-bottom: 0px;
+}
+.Gallery p{
+	font-family: 'Ventura';
+	font-size: 16px;
+	color: #BF3A45;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.Gallery img{
+	max-width: 850px;
+	max-height: 700px;
+}
+@media (max-width: 736px){
+	.whatami{
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.pasfoto img{
+		max-width: 50%;		
+	}
+	.mypersona{
+		align: middle;
+		border-style: double;
+		border-size: 5px;
+		border-radius: 20px;
+		border-color: #BF3A45;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.whatami h2{
+		font-size: 24px;
+	}
+	.whatamtext{
+		font-size: 12px;
+	}
+	.mypersona h2{
+		font-size: 24px;
+	}
+	.mypersona p{
+		margin-left: 10px;
+		margin-bottom: 5px;
+		font-size: 12px;
+	}
+	.Gallery{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.Gallery h2{
+		font-size: 20px;
+	}
+	.Gallery h3{
+		font-size: 16px;
+	}
+	.Gallery p{
+		font-size: 12px;
+	}
+	.Gallery img{
+		max-width: 380px;
+	}
+}
+@media (min-width: 610px) and (max-width: 940px){
+	.whatami{
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+	.pasfoto img{
+		max-height: 30%;
+		max-width: 30%;
+	}
+	.mypersona{
+		margin-right: 0px;
+	}
+	.Gallery img{
+		max-width: 380px;
+	}
 }
 
 </style>
@@ -109,7 +216,7 @@ h1,h2,h3,h4,h5,h6{
 <div class="whatami">
 	<h2>What Am I?</h2>
 	<div class="whatamtext">
-	<p>I do digital arts and traditional arts, photo and video editing, photography (rarely), basic programming with VBA, Python, or VBA.</p>
+	<p>I do digital arts and traditional arts, photo and video editing, photography (rarely), basic programming with VBA, Python, or GDScript.</p>
 	<p>Please keep in mind that my social and networking skills are trash.</p>
 	</div>
 </div>
@@ -123,8 +230,24 @@ h1,h2,h3,h4,h5,h6{
 	</div>
 </div>
 
+<div class="Gallery">
+	<h1>Gallery</h1>
+	<img src="Raphtalia.jpg" alt="Raphtalia Fanart">
+	<h2>Raphtalia fanart</h2>
+	<h3>Made with IbisPaint X</h3>
+	<p>I made this because i want to implement color theory and i am really satisfied by the result.</p>
+	<img src="VDZ.jpg" alt="Trio Art">
+	<h2>Illustration of me with my trio</h2>
+	<h3>Made with IbisPaint X</h3>
+	<p>I made this because i want to improve my rendering method and tried to draw simple environment and objects.</p>
+	<img src="CatalystGokilAbisRevised.jpg" alt="Character Desktop Wallpaper">
+	<h2>Catalyst Gokil Abis Revised</h2>
+	<h3>Made With IbisPaint X</h3>
+	<p>Made this for no reason other than boredom and trying to try some shading methods.</p>
+</div>
+
 <div class="Contacts">
-	
+	<p>Tes IG dll</p>
 </div>
 
 </body>
