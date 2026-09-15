@@ -7,6 +7,15 @@
 </head>
 
 <style>
+@font-face{
+	font-family: Ventura;
+	src: url(Ventura-Bold.ttf);
+}
+@font-face{
+	font-family: Beckman Free;
+	src: url(Beckman-Free.otf);
+}
+
 
 body{
 	background-color: #292257;
@@ -95,7 +104,6 @@ h1,h2,h3,h4,h5,h6{
 	place-items: center;
 	margin-left: 20px;
 	margin-right: 20px;
-	padding: 10px;
 	text-align: center;
 }
 .Gallery h1{
@@ -184,8 +192,9 @@ h1,h2,h3,h4,h5,h6{
 		margin-left: 50px;
 	}
 	.pasfoto img{
+		object-fit: contain;
+		max-width: 40%;
 		max-height: 30%;
-		max-width: 30%;
 	}
 	.mypersona{
 		margin-right: 0px;
