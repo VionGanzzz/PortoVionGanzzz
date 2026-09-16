@@ -28,6 +28,9 @@ h1,h2,h3,h4,h5,h6{
 	margin-top: 80px;
 	font-size: 60px;
 }
+.title h1:hover{
+	animation: 1s ease-in forwards ColorFade;
+}
 .intro{
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -38,11 +41,13 @@ h1,h2,h3,h4,h5,h6{
 	width: 90%;
 	max-width: 100%;
 	height: auto;
+	animation: 2s ease-in infinite alternate-reverse RotatePaper;
 }
 .intro2 img{
 	width: 80%;
 	max-width: 100%;
 	height: auto;
+	animation: 2s ease-out infinite alternate-reverse RotatePaper;
 }
 .whatami{
 	margin-left: 120px;
@@ -58,6 +63,9 @@ h1,h2,h3,h4,h5,h6{
 }
 .whatami h2{
 	font-size:30px;
+}
+.whatami h2:hover{
+	animation: 1s ease-in forwards ColorFade;
 }
 .whatamtext{
 	font-family: 'Ventura';
@@ -95,6 +103,9 @@ h1,h2,h3,h4,h5,h6{
 	margin-top: 140px;
 	margin-bottom: 140px;
 }
+.mypersona h2:hover{
+	animation: 1s ease-in forwards ColorFade;
+}
 .mypersona p{
 	margin-left: 5px;
 }
@@ -104,11 +115,15 @@ h1,h2,h3,h4,h5,h6{
 	margin-left: 20px;
 	margin-right: 20px;
 	text-align: center;
+	margin-top: 100px;
 }
 .Gallery h1{
 	font-family: 'Beckman free';
 	font-size: 60px;
 	color: #BF3A45
+}
+.Gallery h1:hover{
+	animation: 1s ease-in forwards ColorFade;
 }
 .Gallery h2{
 	font-family: 'Ventura';
@@ -135,26 +150,79 @@ h1,h2,h3,h4,h5,h6{
 	max-width: 850px;
 	max-height: 700px;
 }
+.Weapons{
+	margin-left: 200px;
+	margin-right: 200px;
+	background-color: grad1;
+	place-items: center;
+	text-align: center;
+	margin-top: 10px;
+}
+.Weapons h1{
+	font-family: 'Beckman Free';	
+	font-size: 60px;
+	color: #BF3A45;
+}
+.Weapons h1:hover{
+	animation: 1s ease-in forwards ColorFade;
+}
+.Weapons h2{
+	font-family: 'Ventura';
+	font-size: 24px;
+	color: #8EE6DB;
+}
+.Weapons p{
+	font-family: 'Ventura';
+	font-size: 16px;
+	color: #BF3A45;
+}
+.Weapons img{
+	height: 50px;
+	margin-top: 50px;
+	background-color: #8EE6DB;
+	box-shadow: 0 0 20px #8EE6DB;
+}
 .Contacts{
 	object-fit: contain;
 	place-items: center;
 	text-align: center;
 	margin-top: 150px;
-	margin-bottom: 15px;
+	margin-bottom: 40px;
 	margin-left: 20px;
 	margin-right: 20px;
+	background-color: #1D184D;
+	padding-top: 5px;	
+	padding-bottom: 10px;
+	border-style: double;
+	border-size: 5px;
+	border-radius: 20px;
+	border-color: #BF3A45;
 }
 .Contacts h1{
 	font-family: 'Beckman Free';
 	font-size: 20;
 	color: #BF3A45;
 }
+.Contacts h1:hover{ 
+	animation: 1s ease-in forwards ColorFade;
+}
 .Contacts img{
 	max-width: 49px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.Contacts img:hover{
+	animation: 1s ease-out forwards EdgeGlow;
 }
 
-
 @media (max-width: 736px){
+	.Weapons{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.Weapons p{
+		font-size: 12px;
+	}
 	.whatami{
 		margin-right: 10px;
 		margin-left: 10px;
@@ -203,6 +271,10 @@ h1,h2,h3,h4,h5,h6{
 	.Gallery img{
 		max-width: 380px;
 	}
+	.Contacts img{
+		padding-right: 5px;
+		padding-left: 5px;
+	}
 }
 @media (min-width: 610px) and (max-width: 940px){
 	.whatami{
@@ -220,6 +292,34 @@ h1,h2,h3,h4,h5,h6{
 	.Gallery img{
 		max-width: 380px;
 	}
+	.Weapons {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+	.Weapons p{
+		font-size: 14px;
+	}
+	.Contacts img{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@keyframes RotatePaper{
+	from {rotate: 0deg;}
+	to {rotate: 5deg;}
+}
+@keyframes RotateBurnt{
+	from {rotate: 0deg;}
+	to {rotate: 20deg;}
+}
+@keyframes ColorFade{
+	from {color: #BF3A45;}
+	to {color: #22DDDD;}
+}
+@keyframes EdgeGlow{
+	from {box-shadow: 0 0 0px #8EE6DB; background-color: #297725;}
+	to {box-shadow: 0 0 10px #8EE6DB; background-color: #8EE6DB;}
 }
 
 </style>
@@ -237,13 +337,13 @@ h1,h2,h3,h4,h5,h6{
 	<img src="IntroPaper.png" alt="Yo, i am Vion.">
 	</div>
 	<div class="intro2">
-	<img src="IntroPhoto.png" alt="Intro Photo">
+	<img src="IntroPhoto.png" alEt="Intro Photo">
 	</div>
 </div>
 <div class="whatami">
 	<h2>What Am I?</h2>
 	<div class="whatamtext">
-	<p>I do digital arts and traditional arts, photo and video editing, photography (rarely), basic programming with VBA, Python, or GDScript.</p>
+	<p>I do digital arts and traditional arts, photo and video editing, photography (rarely), basic programming with VBA, Python, GDScript, or CSS.</p>
 	<p>Please keep in mind that my social and networking skills are trash.</p>
 	</div>
 </div>
@@ -255,6 +355,28 @@ h1,h2,h3,h4,h5,h6{
 		<p>This is how i always draw myself, because mostly i always hide from photo sessions.... The appearance is inspired by how i looks in real life (surely).</p>
 		</div>
 	</div>
+</div>
+
+<div class="Weapons">
+	<h1>MAIN WEAPONS</h1>
+	<img src="IbisP.png" alt="Ibis Paint X icon">
+	<h2>Ibis Paint X</h2>
+	<p>One of the best software to draw digitally and make posters, designs, etc. Most of their features are free and that is so powerful.</p>
+	<img src="Krita.png" alt="Krita icon">
+	<h2>Krita</h2>
+	<p>Another awesome software to do illustrations, good to make pixel arts in computers beacuse that means you only need the touchpad for less precise mediums.</p>
+	<img src="Gimp.png" alt="GIMP icon">
+	<h2>GIMP</h2>
+	<p>A free, open source software which is really awesome to do photo manipulation and create posters, infographics, etc. In computer.</p>
+	<img src="AlightM.png" alt="Alight Motion icon">
+	<h2>Alight Motion</h2>
+	<p>A video editing software that is amazing but having limitations on its free version, but the premium version is extremely great!</p>
+	<img src="Godot.png" alt="Godot icon">
+	<h2>Godot Engine</h2>
+	<p>Free, open source game engine with broad features and its super lightweight, that my 18 years old laptop supports the newer version!</p>
+	<img src="Nano.png" alt="Nano">
+	<h2>Nano Text Editor</h2>
+	<p>Terminal-based text editor that is simple and customizable, i love to code with this (Yeah this web is written with Nano)</p>
 </div>
 
 <div class="Gallery">
@@ -275,11 +397,11 @@ h1,h2,h3,h4,h5,h6{
 
 <div class="Contacts">
 	<h1>Contact Me!</h1>
-	<img src="Insta.png" alt="Instagram">
-	<img src="YouT.png" alt="Youtube">
-	<img src="Pint.png" alt="Pinterest">
-	<img src="Gith.png" alt="Github">
-	<img src="Gmail.png" alt="Gmail">
+	<a href="https://www.instagram.com/catalystvion?stkn=MWY4Y2sycDk2OHpjag=="><img src="Insta.png" alt="Instagram"></a>
+	<a href="https://youtube.com/@catalystvion?si=ejNC0YS52VbZ35gA"><img src="YouT.png" alt="Youtube"></a>
+	<a href="https://pin.it/5ZuVXHtKP"><img src="Pint.png" alt="Pinterest"></a>
+	<a href="https://github.com/VionGanzzz"><img src="Gith.png" alt="Github"></a>
+	<a href="mailto:ceplokx@gmail.com"><img src="Gmail.png" alt="Gmail"></a>
 </div>
 
 </body>
