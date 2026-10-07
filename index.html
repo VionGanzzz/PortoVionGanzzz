@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6{
 	margin-left: 50px;
 	margin-right: 50px;
 	margin-top: 140px;
-	margin-bottom: 140px;
+	margin-bottom: 160px;
 }
 .mypersona h2:hover{
 	animation: 1s ease-in forwards ColorFade;
@@ -151,12 +151,20 @@ h1,h2,h3,h4,h5,h6{
 	max-height: 700px;
 }
 .Weapons{
-	margin-left: 200px;
-	margin-right: 200px;
-	background-color: grad1;
 	place-items: center;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 100px;
+	margin-left: 230px;
+	margin-right: 230px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	background-color: #1D184D;
+	border-style: double;
+	border-size: 50px;
+	border-radius: 20px;
+	border-color: #BF3A45;
+	box-shadow: 0 0 20px #BF3A45;
 }
 .Weapons h1{
 	font-family: 'Beckman Free';	
@@ -180,6 +188,10 @@ h1,h2,h3,h4,h5,h6{
 	height: 50px;
 	margin-top: 50px;
 	background-color: #8EE6DB;
+	padding: 8px;
+	border-style: solid;
+	border-radius: 50px;
+	border-color: #8EE6DB;
 	animation: 1s ease-in infinite alternate-reverse GlowTerus;
 }
 .Contacts{
@@ -208,8 +220,10 @@ h1,h2,h3,h4,h5,h6{
 }
 .Contacts img{
 	max-width: 49px;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding: 8px;
+	border-style: solid;
+	border-radius: 50px;
+	border-color: #292257;
 }
 .Contacts img:hover{
 	animation: 1s ease-out forwards EdgeGlow;
@@ -217,15 +231,17 @@ h1,h2,h3,h4,h5,h6{
 
 @media (max-width: 736px){
 	.Weapons{
-		margin-left: 10px;
-		margin-right: 10px;
+		margin-left: 40px;
+		margin-right: 40px;
 	}
 	.Weapons h1{
 		font-size: 50px;
-		margin-top: 80px;
+		margin-top: 20px;
 	}
 	.Weapons p{
 		font-size: 12px;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 	.whatami{
 		margin-right: 10px;
@@ -244,6 +260,9 @@ h1,h2,h3,h4,h5,h6{
 		margin-right: 0px;
 		margin-top: 0px;
 		margin-bottom: 0px;
+	}
+	.mypersona p{
+		margin-right: 10px;
 	}
 	.whatami h2{
 		font-size: 24px;
@@ -322,7 +341,7 @@ h1,h2,h3,h4,h5,h6{
 	to {color: #22DDDD;}
 }
 @keyframes EdgeGlow{
-	from {box-shadow: 0 0 0px #8EE6DB; background-color: #297725;}
+	from {box-shadow: 0 0 0px #8EE6DB; background-color: #292257;}
 	to {box-shadow: 0 0 10px #8EE6DB; background-color: #8EE6DB;}
 }
 @keyframes GlowTerus{
@@ -348,7 +367,7 @@ h1,h2,h3,h4,h5,h6{
 	<img src="IntroPhoto.png" alEt="Intro Photo">
 	</div>
 </div>
-<div class="whatami">
+<div class="whatami" id="intro">
 	<h2>What Am I?</h2>
 	<div class="whatamtext">
 	<p>I do digital arts and traditional arts, photo and video editing, photography (rarely), basic programming with VBA, Python, GDScript, or CSS.</p>
@@ -365,7 +384,7 @@ h1,h2,h3,h4,h5,h6{
 	</div>
 </div>
 
-<div class="Weapons">
+<div class="Weapons" id="softw">
 	<h1>MAIN WEAPONS</h1>
 	<img src="IbisP.png" alt="Ibis Paint X icon">
 	<h2>Ibis Paint X</h2>
@@ -387,7 +406,7 @@ h1,h2,h3,h4,h5,h6{
 	<p>Terminal-based text editor that is simple and customizable, i love to code with this (Yeah this web is written with Nano)</p>
 </div>
 
-<div class="Gallery">
+<div class="Gallery" id="gallery">
 	<h1>Gallery</h1>
 	<img src="Raphtalia.jpg" alt="Raphtalia Fanart">
 	<h2>Raphtalia fanart</h2>
@@ -407,7 +426,7 @@ h1,h2,h3,h4,h5,h6{
 	<p>MulaiAja is a productivity app developed by Indonesian developer(s) and i am the one who created its first logo.</p>
 </div>
 
-<div class="Contacts">
+<div class="Contacts" id="contacts">
 	<h1>Contact Me</h1>
 	<a href="https://www.instagram.com/catalystvion?stkn=MWY4Y2sycDk2OHpjag=="><img src="Insta.png" alt="Instagram"></a>
 	<a href="https://youtube.com/@catalystvion?si=ejNC0YS52VbZ35gA"><img src="YouT.png" alt="Youtube"></a>
